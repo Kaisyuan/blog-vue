@@ -2,33 +2,41 @@
   <div class="homebody">
     <Row type="flex" justify="center" :gutter="10">
       <Col :xs="24" :sm="24" :md="12" :lg="10" justify="center" class="col">
-        <el-carousel :interval="101000" type="card" height="250px" class="lun">
+        <el-carousel :interval="3000" type="card" height="250px" class="lun">
           <el-carousel-item v-for="item in img" :key="item">
             <h3 class="medium"><img :src="item"></h3>
           </el-carousel-item>
         </el-carousel>
-        <el-card class="card" v-for="value in object" :key="value.id" :body-style="{padding:'0px'}">
-          <Col :xs="5" :sm="5" :md="7" :lg="7" justify="center">
-            <div class="imgbody">
-              <img src="..\assets\logo3.jpg">
-            </div>
-          </Col>
-          <Col :xs="16" :sm="16" :md="16" :lg="16" justify="center">
-            <div class="titlebody">
-              <h2>标题：如何一年年收入一亿并且赢取白富美</h2>
-              <div class="ss">{{value.context}}</div>
-              <div class="">
-                <span v-for="value in 3" :key="value">
-                  <Tag :color="'#FFA'+value +'D3'">Java</Tag>
-                </span>
-                <span><Icon type="md-person" />Kaisyuan</span>
-                <span><Icon type="md-time" />2019-5-10 16:58:44</span>
-                <span><Icon type="md-eye" />132</span>
+        <div class="body">
+          <el-card class="card" v-for="value in object" :key="value.id" :shadow="never" :body-style="{padding:'0px'}">
+            <Col :xs="5" :sm="5" :md="7" :lg="7" justify="center" class="clo-img hidden-md-and-down">
+              <div class="imgbody">
+                <img src="..\assets\logo3.jpg">
               </div>
-            </div>
-
-          </Col>
-        </el-card>
+            </Col>
+            <Col :xs="24" :sm="24" :md="24" :lg="24" :xl="17" justify="center">
+              <div class="titlebody">
+                <h2>标题：如何一年年收入一亿并且赢取白富美</h2>
+                <div class="ss"><span>{{value.context}}</span></div>
+                <Col :xs="24" :sm="24" :md="24" :lg="24" justify="center" class="hidden-lg-and-up">
+                  <div class="imgbody">
+                    <img src="..\assets\logo3.jpg">
+                  </div>
+                </Col>
+                <Col :xs="11" :sm="15" :md="11" :lg="12" :xl="13" justify="center">
+                 <span v-for="value in 3" :key="value">
+                  <Tag class="tag1" :color="'#FFA'+value +'D3'">Java</Tag>
+                </span>
+                </Col>
+                <Col :xs="13" :sm="9" :md="13" :lg="12" :xl="11" justify="end" class="mark">
+                  <Icon color="#808695" type="md-person" /><span style="color: #13c2c2"><a>Kaisyuan</a></span>
+                  <span><Icon type="md-time" />2019-5-10</span>
+                  <span><Icon type="md-eye" />132</span>
+                </Col>
+              </div>
+            </Col>
+          </el-card>
+        </div>
         <Page style="text-align: center;" :total="90" show-total/>
       </Col>
       <Col :xs="0" :sm="0" :md="0" :lg="4">
@@ -47,7 +55,7 @@
             邮箱:2633147589@qq.com
           </span>
           <p style="text-align: center;color:gray;">
-            <Icon type="logo-github" />Github:
+            <Icon style="line-height: 15px;" type="logo-github" />Github:
             <a href="https://github.com/Kaisyuan" target="_blank">https://github.com/Kaisyuan</a>
           </p>
           <hr>
@@ -177,6 +185,9 @@ export default {
 .homebody {
   padding-top: 60px;
 }
+.body{
+  margin-top: 40px;
+}
 .box-card {
   margin-top: 10px;
 }
@@ -225,6 +236,7 @@ export default {
   text-align: center;
   padding-top: 20px;
   margin-top: 10px;
+  line-height: 25px;
 }
 .clearfix {
   padding: 0px 0px;
@@ -248,9 +260,9 @@ export default {
 
 .imgbody img{
   width: 100%;
+  padding-right: 10px;
 }
 .titlebody{
-  margin-left: 5%;
 }
 .titlebody h2{
   white-space: nowrap;
@@ -258,17 +270,33 @@ export default {
   overflow: hidden;
 }
 .card{
+  border: none;
+  background-color: white;
   padding: 10px;
+  margin-top: 10px;
 }
 .ss{
   min-height: 70px;
-   /* width: 200px;
-    overflow : hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; */
+}
+.ss span{
+  color: #17233d;
+  font-size: 13px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  margin-right: 10px;
 }
 .medium{
+}
+.mark span{
+  color: #808695;
+  padding-left: 5px;
+}
+.tag1{
+  height: 18px;
+  text-align: center;
+  line-height: normal;
 }
 </style>
