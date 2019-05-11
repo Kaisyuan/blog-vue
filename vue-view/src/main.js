@@ -10,9 +10,12 @@ Vue.use(iView)
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 
-Vue({
+let vue = new Vue({
   el: '#app',
   components: { App },
   render: h => h(App),
   template: '<App/>'
+})
+Vue.use({
+  vue
 })
