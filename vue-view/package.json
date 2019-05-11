@@ -1,7 +1,7 @@
 {
-  "name": "vue-iview",
+  "name": "vue-view",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "Blog And Vue.js project",
   "author": "kaisyuan <2633147589@qq.com>",
   "private": true,
   "scripts": {

@@ -26,7 +26,7 @@
                 <span><Icon type="md-eye" />132</span>
               </div>
             </div>
-            
+
           </Col>
         </el-card>
         <Page style="text-align: center;" :total="90" show-total/>
@@ -109,68 +109,68 @@
 
 <script>
 export default {
-  name: "home",
-  data() {
+  name: 'home',
+  data () {
     return {
-       img:[
-        "http://attachments.gfan.com/forum/201504/15/202301silig00iwt0sgezn.jpg",
-        "http://attachments.gfan.com/forum/attachments2/201406/22/082450d4q8qnw1qnk5zkt8.jpg",
-        "http://img.3dmgame.com/uploads/images/news/20181124/1543042277_150670.jpg"
-        ],
+      img: [
+        'http://attachments.gfan.com/forum/201504/15/202301silig00iwt0sgezn.jpg',
+        'http://attachments.gfan.com/forum/attachments2/201406/22/082450d4q8qnw1qnk5zkt8.jpg',
+        'http://img.3dmgame.com/uploads/images/news/20181124/1543042277_150670.jpg'
+      ],
       object: [
         {
           id: 1,
-          title: "java",
-          img: "132123123",
+          title: 'java',
+          img: '132123123',
           context:
-            "悟空和唐僧一起上某卫视非诚勿扰,悟空上台,24盏灯全灭。理由:1.没房没车只有一根破棍. 2.保镖职业危险.3.动不动打妖精,对女生不温柔. 4.坐过牢,曾被压五指山下500年。唐僧上台，哗!灯全亮。 理由:1.公务员； 2.皇上兄弟，后台最硬 3.精通梵文等外语 4.长得帅 5.最关键一点：有宝马！"
+            '悟空和唐僧一起上某卫视非诚勿扰,悟空上台,24盏灯全灭。理由:1.没房没车只有一根破棍. 2.保镖职业危险.3.动不动打妖精,对女生不温柔. 4.坐过牢,曾被压五指山下500年。唐僧上台，哗!灯全亮。 理由:1.公务员； 2.皇上兄弟，后台最硬 3.精通梵文等外语 4.长得帅 5.最关键一点：有宝马！'
         },
         {
           id: 2,
-          title: "PHP",
-          img: "456545456",
-          context: "asdasdasd651d231as23d12as1d"
+          title: 'PHP',
+          img: '456545456',
+          context: 'asdasdasd651d231as23d12as1d'
         },
         {
           id: 3,
-          title: "C++",
-          img: "132123123",
-          context: "sadasasdjaksdasdjklasjdksad"
+          title: 'C++',
+          img: '132123123',
+          context: 'sadasasdjaksdasdjklasjdksad'
         },
         {
           id: 4,
-          title: "CSharp",
-          img: "456545456",
-          context: "asdasdasd651d231as23d12as1d"
+          title: 'CSharp',
+          img: '456545456',
+          context: 'asdasdasd651d231as23d12as1d'
         },
         {
           id: 5,
-          title: "IOS",
-          img: "132123123",
-          context: "sadasasdjaksdasdjklasjdksad"
+          title: 'IOS',
+          img: '132123123',
+          context: 'sadasasdjaksdasdjklasjdksad'
         },
         {
           id: 6,
-          title: "HTML",
-          img: "456545456",
-          context: "asdasdasd651d231as23d12as1d"
+          title: 'HTML',
+          img: '456545456',
+          context: 'asdasdasd651d231as23d12as1d'
         },
         {
           id: 7,
-          title: "CSS",
-          img: "132123123",
-          context: "sadasasdjaksdasdjklasjdksad"
+          title: 'CSS',
+          img: '132123123',
+          context: 'sadasasdjaksdasdjklasjdksad'
         },
         {
           id: 8,
-          title: "C",
-          img: "456545456",
-          context: "asdasdasd651d231as23d12as1d"
+          title: 'C',
+          img: '456545456',
+          context: 'asdasdasd651d231as23d12as1d'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style scoped>

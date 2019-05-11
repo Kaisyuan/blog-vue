@@ -12,9 +12,9 @@
 <script>
 export default {
   name: 'bottom',
-  data () {
+  data: function () {
     return {
-        links:["baidu","google","sogou"]
+      links: [`baidu`, `google`, `sogou`]
     }
   }
 }
@@ -31,4 +31,3 @@ export default {
         text-align: center;
     }
 </style>
-

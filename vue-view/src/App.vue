@@ -13,7 +13,6 @@ import homebody from './components/HomeBody'
 import bottom from './components/Bottom'
 import test from './components/Test'
 
-
 export default {
   name: 'App',
   components: {

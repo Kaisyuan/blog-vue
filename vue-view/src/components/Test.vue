@@ -29,7 +29,7 @@
             </tr>
           </table>
         </el-card>
-        <Page style="text-align: center;" :total="90" show-total />  
+        <Page style="text-align: center;" :total="90" show-total />
       </Col>
       <Col :xs="0" :sm="0" :md="0" :lg="4">
         <el-card class="box-card_one" shadow="never" :body-style="{padding:'0px'}">
@@ -98,11 +98,11 @@
 
 <script>
 export default {
-  name: "Test",
-  data() {
-    return {};
+  name: 'Test',
+  data () {
+    return {}
   }
-};
+}
 </script>
 
 <style scoped>

@@ -51,13 +51,13 @@
 
 <script>
 export default {
-  name: "headtop",
-  data() {
+  name: 'headtop',
+  data () {
     return {
       isCollapse: true
-    };
+    }
   }
-};
+}
 </script>
 
 <style scoped>
