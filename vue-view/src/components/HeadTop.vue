@@ -17,10 +17,14 @@
       </el-submenu>
       <el-menu-item index="5" disabled>日常</el-menu-item>
       <el-menu-item index="6">
-        <a href="https://www.ele.me" target="_blank">关于我</a>
+        <a target="_blank">关于我</a>
       </el-menu-item>
+      <!--<div class="scan">-->
+        <el-input placeholder="请输入内容" v-model="input3" class="input-with-select" @blur="blur">
+          <el-button slot="append" icon="el-icon-search" class="search"></el-button>
+        </el-input>
+      <!--</div>-->
     </el-menu>
-
     <el-menu
       default-active="1-4-1"
       class="el-menu-vertical-demo hidden-sm-only hidden-md-only hidden-lg-only hidden-xl-only"
@@ -56,6 +60,11 @@ export default {
     return {
       isCollapse: true
     }
+  },
+  methods: {
+    blur: function (event) {
+      console.log(event)
+    }
   }
 }
 </script>
@@ -75,5 +84,14 @@ export default {
 .el-menu-vertical-demo {
   position: fixed;
   z-index: 999;
+}
+.input-with-select{
+  margin-top: 10px;
+  width: 20%;
+  height: 10px;
+}
+.el-input__inner{
+  width: 30%;
+  height: 32px;
 }
 </style>
