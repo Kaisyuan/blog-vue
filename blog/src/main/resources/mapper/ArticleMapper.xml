@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kaisyuan.blog.dao.article.ArticleMapper">
+    <select id="addArticle" parameterType="Map" resultType="java.lang.Integer">
+        INSERT INTO (user_id,user_name,password,status)values (#{id},#{name},#{passwod},#{status})
+    </select>
+</mapper>

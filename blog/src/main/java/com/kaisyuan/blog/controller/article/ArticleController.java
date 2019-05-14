@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
 
 @RestController
 @RequestMapping(value = "article")
@@ -21,7 +22,11 @@ public class ArticleController extends BaseController {
     @GetMapping(value = "addArticle")
     public void addArticle(){
         HttpServletRequest request = this.getRequest();
-        String id = request.getParameter("id");
-        System.out.println(id);
+        Map map = request.getParameterMap();
+        System.out.println(map);
+        articleService.addArticle(map);
+    }
+    public void findArticleById(){
+
     }
 }
