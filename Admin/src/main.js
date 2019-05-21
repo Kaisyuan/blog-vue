@@ -3,9 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import iView from 'iview'
+import echarts from 'echarts'
 import 'iview/dist/styles/iview.css'
 
 Vue.use(iView)
+Vue.use(echarts)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
