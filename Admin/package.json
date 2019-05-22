@@ -11,8 +11,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "echarts": "^4.2.1",
     "iview": "^3.4.1",
-    "vue": "^2.5.2"
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
