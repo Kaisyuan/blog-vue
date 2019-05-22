@@ -4,6 +4,7 @@
     <Menu mode="horizontal" class="menu-color" active-name="1">
       <div class="layout-logo"><img style="width: 100%;height: 100%;" src="./assets/logo.png"></div>
       <div class="layout-nav">
+          <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '0 20px'}" type="md-menu" size="24"></Icon>
         <ul class="menu-ul">
           <li><Icon type="logo-github" /></li>
           <li><Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" /></li>
@@ -17,8 +18,7 @@
         <Menu active-name="1-2" theme="light" width="auto" >
           <MenuItem  MenuItem name="0" :open-names="['1']">
               <Icon type=""></Icon>
-              <router-link to="Home">主页</router-link>
-              <!-- <span>主页</span> -->
+              <span>主页</span>
             </MenuItem>
           <Submenu name="1">
             <template slot="title">
@@ -42,14 +42,6 @@
             </template>
             <MenuItem name="3-1">图库列表</MenuItem>
             <MenuItem name="3-2">图库管理</MenuItem>
-          </Submenu>
-          <Submenu name="4">
-            <template slot="title">
-              <Icon type="ios-navigate"></Icon>标签管理
-            </template>
-            <MenuItem name="4-1"><router-link to="Tags">标签管理</router-link></MenuItem>
-            <MenuItem name="4-2">其他</MenuItem>
-            <MenuItem name="4-3">其他</MenuItem>
           </Submenu>
         </Menu>
       </Sider>
