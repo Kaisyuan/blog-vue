@@ -1,6 +1,6 @@
 package com.kaisyuan.blog.Admin.dao.user;
 
-import com.kaisyuan.blog.entity.User;
+import com.kaisyuan.blog.Admin.entity.User;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserDao {

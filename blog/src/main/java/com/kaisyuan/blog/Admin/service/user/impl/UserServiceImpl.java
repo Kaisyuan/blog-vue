@@ -2,11 +2,14 @@ package com.kaisyuan.blog.Admin.service.user.impl;
 
 import com.kaisyuan.blog.Admin.dao.user.UserDao;
 import com.kaisyuan.blog.Admin.service.user.IUserService;
-import com.kaisyuan.blog.entity.User;
+import com.kaisyuan.blog.Admin.entity.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+/**
+ * @author
+ */
 @Service
 public class UserServiceImpl implements IUserService {
 

@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
+/**
+ * @author
+ */
 @RestController
 @RequestMapping(value = "admin/article")
 public class ArticleController extends BaseController {
@@ -25,6 +28,7 @@ public class ArticleController extends BaseController {
         System.out.println(map);
         articleService.addArticle(map);
     }
+
     public void findArticleById(){
 
     }

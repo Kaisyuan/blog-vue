@@ -1,6 +1,6 @@
 package com.kaisyuan.blog.Admin.service.user;
 
-import com.kaisyuan.blog.entity.User;
+import com.kaisyuan.blog.Admin.entity.User;
 
 public interface IUserService {
 
